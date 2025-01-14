@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./parts/navbar.ejs',{active:"addmovie"}) %>
+    
+
+ <main>
+     <form action="">
+        <h1>add new movie</h1>
+
+        <div>
+            <label for="">title</label>
+            <input type="text" name="title">
+        </div>
+        <div>
+            <label for="">rating</label>
+            <input type="number" name="rating" min="0" max="5">
+        </div>
+        <div>
+            <label for="">image</label>
+            <input type="url" name="image" >
+        </div>
+        <div>
+            <label for="">category</label>
+            <select name="catgory" id="">
+                <option value="Aciton">action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Horror">Horror</option>
+                <option value="Drama">Drama</option>
+            </select>
+        </div>
+        <input type="submit" value="add movie">
+    </form>
+ </main>
+</body>
+</html>

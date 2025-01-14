@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./parts/navbar.ejs',{active:"series"}) %>
+    <section>
+        <% series.forEach(serie => { %>
+        <div class="card">
+          <img src="<%= serie.image %>" alt="" />
+          <h4><%= serie.title %></h4>
+          <p>rating : <%= serie.rating %></p>
+          <p>category: <%= serie.category %></p>
+        </div>
+        <% }) %>
+      </section>
+</body>
+</html>

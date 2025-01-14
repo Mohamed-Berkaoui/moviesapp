@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/style.css" />
+<nav>
+  <h2>logo</h2>
+  <div>
+    <% if (active=="home") { %>
+    <a href="/">
+      <p style="background-color: red">home</p>
+    </a>
+
+    <% } else { %>
+    <a href="/">
+      <p>home</p>
+    </a>
+    <% } %> <% if (active=="movies") { %>
+    <a href="/movies">
+      <p style="background-color: red">movies</p>
+    </a>
+
+    <% } else { %>
+    <a href="/movies">
+      <p>movies</p>
+    </a>
+    <% } %> <% if (active=="series") { %>
+    <a href="/series">
+      <p style="background-color: red">series</p>
+    </a>
+
+    <% } else { %>
+    <a href="/series">
+      <p>series</p>
+    </a>
+    <% } %>
+    <a href="/addmovie">
+      <p>addmovie</p>
+    </a>
+  </div>
+</nav>
