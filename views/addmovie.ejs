@@ -10,7 +10,7 @@
     
 
  <main>
-     <form action="">
+     <form action="/newmovie" method="post">
         <h1>add new movie</h1>
 
         <div>
@@ -34,6 +34,12 @@
                 <option value="Drama">Drama</option>
             </select>
         </div>
+        <div>
+            <label for="">type:</label><br>
+            <input type="radio" name="type" value="movie" id="">movie <br>
+            <input type="radio" name="type" value="serie" id="">serie <br>
+        </div>
+        
         <input type="submit" value="add movie">
     </form>
  </main>
